@@ -1,0 +1,17 @@
+[
+    {
+      "_version_": 1,
+      "content": "article",
+      "publishDate": "2015-01-01"
+    },
+    {
+      "_version_": 2,
+      "content": "article2",
+      "publishDate": "2015-02-01"
+    },
+    {
+      "_version_": 2,
+      "content": "article2",
+      "publishDate": "2015-02-01"
+    }
+]
