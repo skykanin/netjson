@@ -5,5 +5,4 @@
             :url "https://www.gnu.org/licenses/gpl-3.0.en.html"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [cheshire "5.8.1"]]
-  :resource-paths ["resources/netjson/"]
-  :profiles {:dev {:plugins [[cider/cider-nrepl "0.20.0"]]}})
+  :resource-paths ["resources/netjson/"])
