@@ -15,12 +15,10 @@
   (:require [cheshire.core :refer [parse-string]])
   (:require [clojure.java.io :as io]))
 
-
-
 (def data (io/resource "netjson.json"))
 
 (defn get-data [path]
-  (parse-string (slurp path) #(keyword %)))
+  (parse-string (slurp path) keyword))
 
 (defn sub-stat [data]
   (-> data
@@ -32,7 +30,7 @@
 (defn collision-stat [json]
   (->> json
        (:interfaces)
-       (filter #(> (:collisions (:statistics %)) 0))
+       (filter #(pos? (:collisions (:statistics %))))
        (map sub-stat)
        (vec)))
 
