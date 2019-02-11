@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="netjsongraph.css" rel="stylesheet"/>
+    <link href="netjsongraph-theme.css" rel="stylesheet"/>
     <title>Title</title>
 </head>
 <body>
-<h1>This is a test</h1>
 </body>
-<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="netjsongraph.js"></script>
+<!--<script src="app.js"></script>-->
+<script>d3.netJsonGraph("networkgraph.json");</script>
 </html>
